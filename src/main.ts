@@ -16,3 +16,5 @@ const router = createRouter({
 })
 createApp(App).use(router).mount('#app')
 console.log('change test')
+console.log('change test')
+console.log('change test')

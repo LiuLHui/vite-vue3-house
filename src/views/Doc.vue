@@ -19,23 +19,25 @@
           </li>
         </ol>
       </aside>
-      <main>主内容</main>
+      <main>
+        <router-view></router-view>
+      </main>
     </div>
   </div>
 </template>
 <script lang="ts">
-import { inject,Ref } from 'vue';
+import { inject, Ref } from "vue";
 import Topnav from "../components/Topnav.vue";
 export default {
   components: {
     Topnav,
   },
-  setup(){
-    const asideVisible = inject<Ref<boolean>>('asideVisible') // get 
+  setup() {
+    const asideVisible = inject<Ref<boolean>>("asideVisible"); // get
     return {
-      asideVisible
-    }
-  }
+      asideVisible,
+    };
+  },
 };
 </script>
 <style lang="scss" scoped>
@@ -51,11 +53,11 @@ aside {
       padding: 4px 0;
     }
   }
-  @media (max-width:500px) {
+  @media (max-width: 500px) {
     position: fixed;
     top: 0;
     left: 0;
-    padding-top:70px;
+    padding-top: 70px;
   }
 }
 </style>

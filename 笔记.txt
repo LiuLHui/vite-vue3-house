@@ -1,0 +1,9 @@
+1、 inheritAttrs // 最外层盒子自动继承所有属性
+
+2、props 跟attrs 的区别 
+props需要声明才能取值，attrs不需要
+props不包含事件，attrs包含
+props没有声明的属性 会跑到attrs
+props支持string以外类型，attrs只有string
+
+3、
